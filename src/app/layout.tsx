@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Return Arquitetura",
-  description: "Criado por Daniel Silva",
+  description:
+    "return Arquitetura, de Daniel Xavier, transforma espaços com design inovador, unindo estética, funcionalidade e sustentabilidade.",
 };
 
 export default function RootLayout({
