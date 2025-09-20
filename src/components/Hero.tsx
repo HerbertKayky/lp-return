@@ -9,6 +9,13 @@ export default function Hero() {
     setIsVisible(true);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background geometric shapes */}
@@ -36,7 +43,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group bg-gray-900 text-[#CCAF6D] px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border border-[#CCAF6D]">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="group bg-gray-900 text-[#CCAF6D] px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border border-[#CCAF6D]"
+            >
               <span className="flex items-center">
                 Solicitar Orçamento
                 <svg
@@ -55,7 +65,10 @@ export default function Hero() {
               </span>
             </button>
 
-            <button className="border-2 border-[#CCAF6D] text-gray-900 px-8 py-4 text-lg font-medium hover:bg-[#CCAF6D] hover:text-gray-900 transition-all duration-300">
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="border-2 border-[#CCAF6D] text-gray-900 px-8 py-4 text-lg font-medium hover:bg-[#CCAF6D] hover:text-gray-900 transition-all duration-300"
+            >
               Ver Projetos
             </button>
           </div>

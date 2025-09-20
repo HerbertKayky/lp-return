@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState, useEffect, useRef } from "react";
 
@@ -37,20 +38,16 @@ export default function About() {
             <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
               <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                 <div className="text-gray-500 text-center">
-                  <div className="w-24 h-24 bg-gray-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-12 h-12 text-gray-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                  <div className="w-full h-full bg-gray-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Image
+                      src="/daniel.jpg"
+                      alt="Daniel Xavier - Arquiteto"
+                      width={500}
+                      height={500}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-sm">Daniel Silva</p>
+                  <p className="text-sm">Daniel Xavier</p>
                 </div>
               </div>
             </div>
@@ -70,19 +67,19 @@ export default function About() {
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
                 <strong className="text-gray-900">Daniel Silva</strong> é o
-                fundador e principal arquiteto da Return, com vasta experiência
+                fundador e principal arquiteto da return, com vasta experiência
                 em projetos comerciais e institucionais em Pernambuco.
               </p>
 
               <p>
-                Especializado em arquitetura comercial, Herbert desenvolve
+                Especializado em arquitetura comercial, Daniel desenvolve
                 soluções inovadoras para mercados, lojas, escritórios e
                 edifícios, sempre priorizando funcionalidade, estética e
                 eficiência espacial.
               </p>
 
               <p>
-                Na <strong className="text-gray-900">Return</strong>, cada
+                Na <strong className="text-gray-900">return</strong>, cada
                 projeto é desenvolvido com atenção aos detalhes e às
                 necessidades específicas dos clientes, criando espaços que
                 otimizam negócios e proporcionam experiências únicas.
@@ -91,17 +88,17 @@ export default function About() {
 
             <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-200">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">20+</div>
                 <div className="text-gray-600 text-sm">
                   Projetos Desenvolvidos
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 mb-2">8+</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">2+</div>
                 <div className="text-gray-600 text-sm">Anos de Experiência</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 mb-2">5</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">10</div>
                 <div className="text-gray-600 text-sm">Cidades Atendidas</div>
               </div>
             </div>
